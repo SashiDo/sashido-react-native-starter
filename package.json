@@ -3,10 +3,17 @@
   "version": "1.0.0",
   "main": "index.ts",
   "dependencies": {
+    "@expo/metro-runtime": "~58.0.17",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "events": "^3.3.0",
     "expo": "~58.0.25",
+    "expo-crypto": "~58.0.8",
     "expo-status-bar": "~58.0.5",
+    "parse": "^7.1.2",
     "react": "19.3.0",
-    "react-native": "0.88.1"
+    "react-dom": "19.3.0",
+    "react-native": "0.88.1",
+    "react-native-web": "^0.21.4"
   },
   "devDependencies": {
     "@types/react": "~19.3.0",
@@ -16,7 +23,10 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "setup-schema": "node scripts/setup-schema.mjs"
   },
-  "private": true
+  "private": true,
+  "description": "A React Native (Expo) starter for SashiDo: sign up, login and a private todo list with live updates, on Parse Server.",
+  "license": "MIT"
 }
